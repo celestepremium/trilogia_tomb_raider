@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tomb Raider (2013)</title>
+  <style>
+    /* Estilos base */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1b2a41, #406882);
+      color: #e0e6f2;
+      margin: 0;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: bgFade 20s ease-in-out infinite alternate;
+    }
+
+    @keyframes bgFade {
+      0% {
+        background: linear-gradient(135deg, #1b2a41, #406882);
+      }
+      100% {
+        background: linear-gradient(135deg, #2e446b, #1b2a41);
+      }
+    }
+
+    header {
+      background-color: rgba(18, 32, 47, 0.85);
+      width: 100%;
+      padding: 30px 15px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      border-bottom: 3px solid #d9a441;
+      animation: headerFadeIn 2s ease forwards;
+    }
+    @keyframes headerFadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 3rem;
+      color: #d9a441;
+      text-shadow: 2px 2px 6px #000;
+      margin: 0;
+    }
+
+    section {
+      background: rgba(23, 35, 52, 0.85);
+      max-width: 900px;
+      width: 90%;
+      margin: 40px auto;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow:
+        0 0 10px #d9a441,
+        0 0 30px rgba(217, 164, 65, 0.6);
+      color: #f5f5dc;
+      font-size: 1.1rem;
+      animation: sectionSlideIn 1.5s ease forwards;
+      position: relative;
+      overflow: hidden;
+    }
+    @keyframes sectionSlideIn {
+      from {opacity: 0; transform: translateY(50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    section img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+      margin-bottom: 25px;
+      animation: imgPulse 4s ease-in-out infinite;
+    }
+    @keyframes imgPulse {
+      0%, 100% {filter: brightness(1);}
+      50% {filter: brightness(1.1);}
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+      margin-bottom: 25px;
+    }
+
+    p {
+      margin-bottom: 25px;
+    }
+
+    a.volver {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #d9a441;
+      color: #1b2a41;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(217, 164, 65, 0.7);
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    a.volver:hover {
+      background-color: #b38620;
+      color: #f5f5dc;
+      box-shadow: 0 6px 15px rgba(183, 134, 32, 0.9);
+      transform: scale(1.07) rotate(-2deg);
+    }
+    a.volver:active {
+      animation: clickBounce 0.25s ease forwards;
+    }
+
+    @keyframes clickBounce {
+      0% { transform: scale(1) rotate(0deg); }
+      50% { transform: scale(0.85) rotate(5deg); }
+      100% { transform: scale(1) rotate(0deg); }
+    }
+
+    /* Nueva animación para salida */
+    @keyframes fadeOutUp {
+      0% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+    }
+    /* Clase para activar la animación de salida */
+    .fade-out-up {
+      animation: fadeOutUp 0.5s forwards;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tomb Raider (2013)</h1>
+  </header>
+
+  <section id="contenido">
+    <img src="/tomb raider/imagenes/tomb_raider_2013/tomb_raider3.png" alt="Tomb Raider 2013"/>
+
+    <p>
+      En este reinicio de la saga, Lara Croft es una joven arqueóloga atrapada en una isla peligrosa tras un naufragio.
+      Este juego marcó un cambio importante hacia una Lara más humana y vulnerable, destacando su desarrollo emocional y físico a lo largo de la historia.
+      El combate, la exploración, y los elementos de supervivencia se combinan para crear una experiencia intensa y cinematográfica.
+    </p>
+
+    <ul>
+      <li>Desarrollador: Crystal Dynamics</li>
+      <li>Plataformas: PC, PS3, PS4, Xbox 360, Xbox One</li>
+      <li>Género: Aventura, Acción</li>
+    </ul>
+
+    <p>
+      Información General del Juego<br />
+      Nombre completo: Tomb Raider (2013)<br />
+      Género: Acción-Aventura, Supervivencia<br />
+      Plataformas: PC, PS3, Xbox 360 (y posteriormente en versiones remasterizadas)<br />
+      Perspectiva: Tercera persona<br />
+      Duración media: 12–15 horas (campaña principal)
+    </p>
+
+    <p>
+      🎮 Mecánicas del Juego<br />
+      Exploración: Zonas semiabiertas conectadas, con énfasis en recolección de recursos, documentos, reliquias y tumbas.<br />
+      Supervivencia: Caza de animales, recolección de materiales y mejora de armas.<br />
+      Combate: Uso de armas de fuego y el arco. Se promueve el sigilo en varias secciones.<br />
+      Progresión: Lara gana experiencia (XP), desbloquea habilidades y mejora sus armas con piezas que recolecta.<br />
+      Campamentos: Lugares donde puedes guardar el juego, mejorar habilidades y hacer viajes rápidos.<br />
+      Plataformas y Puzzles Ambientales: Escaladas, saltos, cuerdas, poleas y palancas para avanzar o acceder a tumbas.
+    </p>
+
+    <p>
+      🔫 Armas Principales<br />
+      Arco improvisado / Arco compuesto<br />
+      Pistola (pistola de mano)<br />
+      Escopeta (con mejoras)<br />
+      Rifle de asalto<br />
+      Hacha de escalada (también se usa en combate cuerpo a cuerpo)<br />
+      Granadas/molotovs (improvisados)<br />
+      Cada arma puede mejorarse con materiales, aumentando su daño, precisión o velocidad de recarga.
+    </p>
+
+    <p>
+      👹 Enemigos<br />
+      Solarii: Milicia de sobrevivientes humanos fanáticos que siguen al villano Mathias.<br />
+      Carroñeros: Miembros agresivos y armados del culto.<br />
+      Animales salvajes: Lobos, osos, jabalíes, etc.<br />
+      Oni: Guerreros samuráis no-muertos pertenecientes al antiguo ejército del Imperio Yamatai.<br />
+      Elementos ambientales: Trampas, incendios, explosiones y zonas de riesgo.
+    </p>
+
+    <p>
+      🗺️ La Isla<br />
+      Nombre: Yamatai (basada en una leyenda real japonesa)<br />
+      Ubicación: Mar del Diablo, cerca de Japón<br />
+      Ambiente: Montañas, selvas, playas, templos y ruinas de la Segunda Guerra Mundial.<br />
+      Características místicas: La isla está rodeada por tormentas sobrenaturales que impiden escapar. Controladas por una fuerza llamada la Reina del Sol.
+    </p>
+
+    <p>
+      🔥 La Secta: Los Solarii<br />
+      Líder: Padre Mathias<br />
+      Objetivo: Servir a Himiko (la Reina del Sol) y encontrar una nueva "vasija" para transferir su alma y detener las tormentas.<br />
+      Origen: Hombres náufragos que se unen a Mathias con el paso del tiempo, formando una secta con jerarquía y ritos violentos.
+    </p>
+
+    <p>
+      ⚔️ Los Oni / Guardia de la Tormenta<br />
+      Descripción: Guerreros samuráis no-muertos, protectores del templo y de la tumba de Himiko.<br />
+      Lealtad: Sirven a Himiko. Atacan tanto a Lara como a los Solarii.<br />
+      Apariencia: Grandes, con armaduras de samurái, muy agresivos, algunos gigantes con mazas enormes.<br />
+      Tecnología: Armas cuerpo a cuerpo tradicionales, fuerza bruta.
+    </p>
+
+    <p>
+      🏯 Yamatai / Imperio Japonés Antiguo<br />
+      Reina Himiko: Antiguo espíritu shamanístico que controlaba el clima. Considerada una diosa viviente.<br />
+      Cultura: Basada en la mitología japonesa; Himiko existió realmente, aunque se mezclan elementos místicos.<br />
+      Religión: La transición de poder de Himiko requiere un "recipiente" (mujer elegida) para transferir su alma.<br />
+      Ejército: Los Oni eran su ejército personal, convertidos en guardianes inmortales tras su muerte.
+    </p>
+
+    <p>
+      🧍‍♀️ Personajes Principales<br />
+      ▶️ Lara Croft<br />
+      Edad: 21 años<br />
+      Profesión: Estudiante de arqueología<br />
+      Desarrollo: Pasa de ser inexperta a una superviviente fuerte y decidida.
+    </p>
+
+    <p>
+      ▶️ Mathias<br />
+      Rol: Antagonista principal<br />
+      Motivación: Escapar de la isla usando a Sam como recipiente para Himiko.<br />
+      Líder de: Los Solarii.
+    </p>
+
+    <p>
+      ▶️ Samantha "Sam" Nishimura<br />
+      Amiga cercana de Lara<br />
+      Descendiente de la Reina Himiko<br />
+      Objetivo del ritual de posesión
+    </p>
+
+    <p>
+      ▶️ Conrad Roth<br />
+      Mentor de Lara<br />
+      Ex-militar y líder del equipo de la expedición<br />
+      Figura paternal y guía emocional
+    </p>
+
+    <p>
+      ▶️ Dr. Whitman<br />
+      Arqueólogo en busca de fama<br />
+      Colabora con Mathias por interés personal<br />
+      Personaje cobarde y egoísta
+    </p>
+
+    <p>
+      ▶️ Alex, Reyes, Jonah, Grim<br />
+      Miembros de la tripulación del Endurance<br />
+      Ayudan a Lara en distintas partes del juego<br />
+      Muchos de ellos tienen momentos clave o mueren
+    </p>
+
+    <p>
+      🪦 Tumbas y Criptas<br />
+      Tipo: Secundarias (opcionales)<br />
+      Desafíos: Rompecabezas ambientales con mecánicas físicas (peso, fuego, agua, etc.)<br />
+      Recompensas: Habilidades, reliquias, mapas del tesoro<br />
+      Estilo: Inspirado en las antiguas tumbas egipcias, mayas y japonesas 
+    </p>
+
+    <a class="volver" href="pantallas.html" id="btnVolver">← Volver al inicio</a>
+
+  </section>
+
+  <script>
+    const btnVolver = document.getElementById('btnVolver');
+    btnVolver.addEventListener('click', function(event) {
+      event.preventDefault(); // Evitamos la navegación inmediata
+
+      // Añadimos la clase para animar el fade out hacia arriba
+      btnVolver.classList.add('fade-out-up');
+
+      // Al finalizar la animación, navegamos a la página
+      btnVolver.addEventListener('animationend', () => {
+        window.location.href = btnVolver.href;
+      }, { once: true }); // El event listener se elimina tras ejecutarse una vez
+    });
+  </script>
+</body>
+</html>
